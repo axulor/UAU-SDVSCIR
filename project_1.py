@@ -72,7 +72,7 @@ def main():
     df_mmcar.to_csv(absolute_path / f"avg_mmcar.csv", index=False, header=False)
 
     # MC模拟
-    num_sims = 32
+    num_sims = 300
     mc_sums = None
     with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
         futures = [executor.submit(run_simulation, i, Epidemic_sim) for i in range(num_sims)]
