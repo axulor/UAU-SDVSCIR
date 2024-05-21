@@ -23,7 +23,7 @@ absolute_path = current_file_path / relative_path
 os.makedirs(absolute_path, exist_ok=True)
 
 # 定义超参数
-global_t = 39
+global_t = 50
 effective_t =30
 
 def calculate_type(epidemic_instance, e, init_c=None, updated_p_C=None):
