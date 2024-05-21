@@ -180,7 +180,7 @@ beta_values = [round(x * 0.001, 3) for x in range(1, 11)] + \
                         [1.00]
 
 # 模拟参数
-num_simulations = 10
+num_simulations = 100
 net_types = [1]
 
 for net_type in tqdm(net_types, desc="Generating networks and running simulations"):
